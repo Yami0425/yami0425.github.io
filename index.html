@@ -22,12 +22,14 @@
         </p>
 
 		<p style="line-height: 1.6em;">
-      Min Yang is a graduate student at <a href="http://www.aiar.xjtu.edu.cn/">Institute of Artificial Intelligence and Robotics (IAIR) </a>, supervised by <a href="http://gr.xjtu.edu.cn/web/mengyang">Meng Yang</a>  and <a href="https://gr.xjtu.edu.cn/web/yaochenli/home">Yaochen Li</a> 
+      Min Yang is a graduate student at <a href="http://www.aiar.xjtu.edu.cn/">Institute of Artificial Intelligence and Robotics (IAIR)</a>, 
+	  Xi'an Jiaotong University (西安交通大学), 
+	  supervised by <a href="https://ieeexplore.ieee.org/author/37279418600">Yuehu Liu</a>  and <a href="https://gr.xjtu.edu.cn/web/yaochenli/home">Yaochen Li</a> 
       Before that, she received the B.S. Degree from <a href="https://cs.xidian.edu.cn/">School of Computer Science and Technology</a> 
-      of <a href="https://www.xidian.edu.cn/"> Xidian University (XDU)</a> in 2020. 
+      of <a href="https://www.xidian.edu.cn/"> Xidian University (XDU)</a> (西安电子科技大学)in 2020. 
     </p>  
 	<p style="line-height: 1.6em;">
-       Her research interest includes Computer Vision, Machine Learning. <br\>Currently, she is working on semantic segmentation and object detection for point cloud.
+       Her research interest includes Computer Vision, Machine Learning. Currently, she is working on 3D Point Cloud Semantic Understanding topic. especially the Point Cloud Registration and Multimodal Point Cloud Semantic Segmentation.
     </p>
     
 
@@ -97,7 +99,7 @@
           <p style="line-height: 1.4em;">
           <stronghuge>Xidian University, &nbsp; China</stronghuge><br />
           B.ENG. in Computer Science and Technology &nbsp; <strong>Outstanding student cadre</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &bull; Sep. 2016 - Jun. 2020<br />
-          GPA: <strong>3.40</strong>/4.0 &nbsp; <br />Core Courses: Analysis of Algorithms &nbsp;&nbsp; Operating System  &nbsp;&nbsp;  <br />
+          GPA: <strong>3.39</strong>/4.0 &nbsp; <br />Core Courses: Analysis of Algorithms &nbsp;&nbsp; Operating System  &nbsp;&nbsp;  <br />
 
           </p>
         </td>
@@ -131,9 +133,9 @@
           <p  style="line-height: 1.3em;">
           <stronghuge>Institute of Artificial Intelligence and Robotics(IAIR), &nbsp; Xi'an Jiaotong University</stronghuge><br />
           <huge><em>M.S. Dissertation Project & Research Associate</em></huge> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &bull; Sep. 2020 - Present <br />
-          Advisors: &nbsp; <a href="http://gr.xjtu.edu.cn/web/mengyang">Meng Yang</a>  and <a href="https://gr.xjtu.edu.cn/web/yaochenli/home">Yaochen Li</a> 
-          <li> Point cloud registration with traditional methods and deep learning methods. <br/>
-          <li> Multimodal point cloud semantic segmentation. <br/>
+          Advisors: &nbsp; <a href="https://ieeexplore.ieee.org/author/37279418600">Yuehu Liu</a>  and <a href="https://gr.xjtu.edu.cn/web/yaochenli/home">Yaochen Li</a> 
+          <li> Point Cloud Registration with traditional methods and deep learning methods. <br/>
+          <li> Multimodal Point Cloud Semantic Segmentation. <br/>
           <li> 3D Object Detection in Road Scenes. <br/>
           </p>
         </td>
@@ -150,9 +152,9 @@
           <p  style="line-height: 1.3em;">
           <stronghuge>Ascend Ecological Development Department, &nbsp; Huawei</stronghuge><br />
           <huge><em>Research  Assistant</em></huge> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &bull; Mar. 2022 - Jun. 2022 <br />
-          <li> Transplant the deep learning model to Huawei Shengteng AI processor for deployment. <br/>
+          <li> Transplant the deep learning model to Huawei Ascend AI processor for deployment. <br/>
           <li> Complete the compatibility and performance verification of both systems<br/>
-          <li> Achieve the required accuracy and performance on the Shengteng AI processor about EfficientPS and centroids-reid. <br/>
+          <li> Achieve the required accuracy and performance on the Ascend AI processor about EfficientPS and centroids-reid. <br/>
           </p>
         </td>
       </tr>
@@ -196,13 +198,24 @@
       </td>
       <td valign="top" width="75%">
 	 <strong>RITNet: A Rotation Invariant Transformer based Network for Point Cloud Registration</strong><br>
-	 <strong>Min Yang</strong><br> Yaochen Li,Su Wang        
-	 <em> IEEE International Conference on Tools with Artificial Intelligence (ICTAI) , <strong>CCF-C</strong><br>
+	 <strong>Min Yang</strong>, Yaochen Li,Su Wang, Shaohan Yang, Yuehu Liu     
+	 <em>Accepted by IEEE International Conference on Tools with Artificial Intelligence (ICTAI) , <strong>CCF-C CORE-B</strong><br>
         <em>Area: Point Cloud Registration, Transformer</em> <br>
         <p></p>
-      <p>We propose a point transformer registration method named Point Transformer Registration Net (PTRNet) which is an end-toend network based on the Transformer architecture.
-	 And design a novel feature extraction module GAE that can efficiently make use of the inter and global information of point
-clouds on different levels
+      <p>Conventional point cloud registration methods usually 
+	  employ an encoder-decoder architecture, where mid-level
+	  features are locally aggregated to extract geometric information.
+	  However, the over-reliance on local features may raise the
+	  boundary points cannot be adequately matched for two point
+	  clouds. To address this issue, we argue that the boundary
+	  features can be further enhanced by the rotation information, and
+	  propose a rotation invariant representation to replace common
+	  3D Cartesian coordinates as the network inputs that enhances
+	  generalization to arbitrary orientations. Based on this technique,
+	  we propose rotation invariant Transformer for point cloud registration, 
+	  which utilizes insensitivity to arrangement and quantity
+	  of data in the Transformer module to capture global structural
+	  knowledge within local parts for overall comprehension of each point clouds.
 	  </p>
       </td>
     </tr>
@@ -215,10 +228,10 @@ clouds on different levels
       </td>
       <td valign="top" width="75%">
 	 <strong>TADP: Task-Aware Deformable Prediction for Single-Stage 3D Object Detection</strong><br>
-	 Su Wang, <strong>Min Yang</strong><br>
-        <em>IEEE International Conference on Robotics and Automation (ICRA), <strong>CCF-B</strong><br>
+	 Su Wang, <strong>Min Yang</strong><br>, Yaochen Li, Jiahao Nie, Rui Huang, Yuehu Liu
+        <em>Submitted to IEEE International Conference on Robotics and Automation (ICRA), <strong>CCF-B CORE-B</strong><br>
         <em>Area: Point Cloud, Object Detection</em> <br>
-        <p></p>
+
       <p>We propose a new single-stage detector named Task-Aware Deformation for Single-Stage 3D Object Detection (TADD) which is applied to point cloud-based single-stage 3D object detection. 
 	  The main contribution of our method is to propose a an end-to-end but one-stage detector that includes a three-level feature refinement aggregation module (TFRA), multi-scale feature aggregation (MSFA). 
 	  </p>
@@ -303,7 +316,7 @@ clouds on different levels
               <div style="line-height:25px">
               <p>
           <li> <stronghuge>Academic assistant, League branch secretary</stronghuge>&nbsp XJTU &nbsp 2020 - 2021<br/>
-          <li> <stronghuge>Monitor, Vice Minister of student union of Computer College</stronghuge> &nbsp XJTU &nbsp ; 2016 - 2020<br/>
+          <li> <stronghuge>Monitor, Vice Minister of student union of Computer College</stronghuge> &nbsp XDU &nbsp ; 2016 - 2020<br/>
               </p>
               </div>
             </td>
@@ -333,7 +346,7 @@ clouds on different levels
           <heading>Honor & Award</heading>
           <div style="line-height:25px">
           <p>
-      <li> <stronghuge>University of Minnesota 3MT Competition: First Award</stronghuge> &nbsp; 2022<br/>
+      <li> <stronghuge>The first prize of University of Minnesota 3MT Competition</stronghuge> &nbsp; 2022<br/>
       <li> <stronghuge>National Outstanding Volunteer</stronghuge> &nbsp; 2018<br/>
       <li> <stronghuge>The third prize of the National College Students Mathematics Competition</stronghuge> &nbsp; 2017<br/>
       <li> <stronghuge>XDU Outstanding Student Cadre</stronghuge> &nbsp; 2017 - 2019<br/>     
